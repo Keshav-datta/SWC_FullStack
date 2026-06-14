@@ -1,0 +1,83 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  background: #121212;
+  color: white;
+}
+
+.sidebar {
+  width: 220px;
+  background: black;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 90px;
+}
+
+.song-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(180px, 1fr)
+    );
+
+  gap: 15px;
+}
+
+.song-card {
+  background: #1f1f1f;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.song-card:hover {
+  background: #282828;
+}
+
+.recent {
+  margin-top: 30px;
+}
+
+.player {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: #181818;
+
+  border-top: 1px solid #333;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  padding: 15px;
+}
+
+.player button {
+  margin: 0 5px;
+
+  padding: 10px;
+}
