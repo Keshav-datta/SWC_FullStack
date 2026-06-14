@@ -1,0 +1,103 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  background: #121212;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  background: #000;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.playlist {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.songs-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    );
+
+  gap: 20px;
+}
+
+.song-card {
+  background: #181818;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.song-card:hover {
+  background: #282828;
+}
+
+.song-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.song-card h3 {
+  margin-top: 10px;
+}
+
+.player {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: #181818;
+
+  border-top: 1px solid #333;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 25px;
+}
+
+.player button {
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: #1db954;
+
+  color: white;
+
+  cursor: pointer;
+}
