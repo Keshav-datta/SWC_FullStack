@@ -1,0 +1,72 @@
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.layout {
+  display: flex;
+  gap: 30px;
+}
+
+.products {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    );
+
+  gap: 15px;
+}
+
+.card {
+  background: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 20px;
+}
+
+.card button {
+  margin-top: 10px;
+}
+
+.cart {
+  width: 350px;
+
+  background: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 20px;
+}
+
+.cart-item {
+  border-bottom:
+    1px solid #eee;
+
+  padding: 10px 0;
+}
+
+.cart-item input {
+  width: 60px;
+
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+
+  cursor: pointer;
+}
